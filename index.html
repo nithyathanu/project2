@@ -1,1 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brightly — a modern, lightweight gadget that simplifies your daily routine. Explore features, specs, and buy now.">
+  <meta name="keywords" content="Brightly, gadget, tech, product, buy, smart-device, lightweight">
+  <title>SmartKart — Smart Everyday Gadget</title>
 
+  <!-- Open Graph (optional but helpful for social previews) -->
+  <meta property="og:title" content="Brightly — Smart Everyday Gadget">
+  <meta property="og:description" content="Brightly is a modern, lightweight gadget that simplifies your daily routine.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:type" content="product">
+
+  <style>
+    :root{
+      --accent:hsl(157, 100%, 69%);
+      --muted:#6b7280;
+      --bg:#f7f7fb;
+      --card:#ffffff;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.45}
+    header{background:linear-gradient(90deg, rgba(108,99,255,0.1), rgba(108,99,255,0.03));padding:48px 20px}
+    .container{max-width:1100px;margin:0 auto}
+    .hero{display:grid;grid-template-columns:1fr 480px;gap:32px;align-items:center}
+    h1{font-size:2.1rem;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 20px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:white;box-shadow:0 6px 18px rgba(108,99,255,0.12)}
+    .btn-ghost{background:transparent;color:var(--accent);border:1px solid rgba(108,99,255,0.14)}
+
+    .card{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(12,12,18,0.04)}
+    .product-img{width:100%;height:auto;border-radius:10px;display:block}
+
+    section{padding:36px 20px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .feature{background:linear-gradient(180deg,#fff,#fbfbff);padding:16px;border-radius:10px}
+    .feature h3{margin:0 0 8px;font-size:1rem}
+    .specs{display:flex;gap:16px;flex-wrap:wrap}
+
+    ul{margin:0;padding-left:1.1rem}
+
+    footer{padding:22px 20px;background:#fff;border-top:1px solid #efeff5}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      h1{font-size:1.6rem}
+      .card{padding:14px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#4ecdc4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">S</div>
+          <div>
+            <div style="font-weight:700">SmartKart</div>
+            <div style="font-size:0.85rem;color:var(--muted)">Smart Everyday Gadget</div>
+          </div>
+        </div>
+        <nav aria-label="Main navigation" style="color:var(--muted);font-weight:600">
+          <a href="#features" style="margin-right:14px;color:inherit;text-decoration:none">Features</a>
+          <a href="#specs" style="margin-right:14px;color:inherit;text-decoration:none">Specs</a>
+          <a href="#buy" style="color:inherit;text-decoration:none">Buy</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <div>
+          <h1>SmartKart — simplify your day with one smart gadget</h1>
+          <p class="lead">A compact, powerful device for reminders, ambient lighting, and quick automation. Made for people who want fewer apps and more flow.</p>
+
+          <div class="card" style="margin-top:18px">
+            <p style="margin:0 0 8px"><strong>Why people love Brightly</strong></p>
+            <ul>
+              <li>Plug-and-play setup in under a minute</li>
+              <li>Wireless, lightweight, long battery life</li>
+              <li>Open API &amp; third-party integrations</li>
+            </ul>
+            <div class="cta-row" style="margin-top:12px">
+              <button class="btn btn-primary" id="buyNow">Buy Now — ₹4,999</button>
+              <button class="btn btn-ghost" id="learnMore">Learn More</button>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;color:var(--muted);font-size:0.95rem">
+            <strong>Fast facts</strong>
+            <div class="specs" style="margin-top:8px">
+              <div class="card" style="padding:10px">Weight: 120g</div>
+              <div class="card" style="padding:10px">Battery: 20+ hours</div>
+              <div class="card" style="padding:10px">Connectivity: BLE + Wi‑Fi</div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80" alt="Brightly product hero" class="product-img">
+            <p style="margin:10px 0 0;color:var(--muted);font-size:0.92rem">Gorgeous, minimal design that blends into any desk or bedside table.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="features">
+        <div class="container">
+          <h2>Features</h2>
+          <p class="lead">Thoughtful features built for daily use.</p>
+
+          <div class="features">
+            <div class="feature">
+              <h3>Smart Reminders</h3>
+              <p style="margin:0;color:var(--muted)">Set timed reminders and gentle wake routines that adapt to your schedule.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Ambient Lighting</h3>
+              <p style="margin:0;color:var(--muted)">Soft, adjustable tones to improve focus and relaxation.</p>
+            </div>
+
+            <div class="feature">
+              <h3>One‑tap Automations</h3>
+              <p style="margin:0;color:var(--muted)">Trigger scenes and routines with a single tap or voice command.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Privacy‑first</h3>
+              <p style="margin:0;color:var(--muted)">Local-first processing with optional cloud features—your data belongs to you.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Integrations</h3>
+              <p style="margin:0;color:var(--muted)">Works with popular platforms via Bluetooth and webhooks.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Long Battery</h3>
+              <p style="margin:0;color:var(--muted)">Charge less: up to 20 hours on a single charge with fast USB‑C charging.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="specs">
+        <div class="container">
+          <h2>Technical specs</h2>
+          <ul>
+            <li>Size: 95 × 60 × 28 mm</li>
+            <li>Weight: 120 g (incl. battery)</li>
+            <li>Battery: 3,000 mAh, USB‑C fast charge</li>
+            <li>Connectivity: Bluetooth 5.2, Wi‑Fi 802.11ac</li>
+            <li>Sensors: Ambient light sensor, accelerometer</li>
+            <li>Materials: Recycled aluminum + polycarbonate</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="container">
+          <h2>What users say</h2>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px">
+            <div class="card">
+              <strong>"A tiny powerhouse"</strong>
+              <p style="margin:8px 0 0;color:var(--muted)">"Brightly replaced three devices on my desk. Setup took 3 minutes." — Ananya</p>
+            </div>
+            <div class="card">
+              <strong>"Finally, something that just works"</strong>
+              <p style="margin:8px 0 0;color:var(--muted)">"Reliable, simple, and beautiful." — Rohit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="buy">
+        <div class="container">
+          <h2>Ready to try Brightly?</h2>
+          <p class="lead">Choose your plan and get free shipping for a limited time.</p>
+
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+            <div class="card" style="flex:1;min-width:220px">
+              <h3>Standard</h3>
+              <p style="margin:6px 0 0">₹4,999 — 1× Brightly device</p>
+              <ul style="margin-top:8px">
+                <li>1-year warranty</li>
+                <li>30-day returns</li>
+              </ul>
+              <div style="margin-top:12px"><button class="btn btn-primary">Buy Now</button></div>
+            </div>
+
+            <div class="card" style="flex:1;min-width:220px">
+              <h3>Bundle</h3>
+              <p style="margin:6px 0 0">₹8,999 — 2× Brightly devices</p>
+              <ul style="margin-top:8px">
+                <li>2× devices + 6 months extra warranty</li>
+                <li>Priority support</li>
+              </ul>
+              <div style="margin-top:12px"><button class="btn btn-ghost">Buy Bundle</button></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div style="color:var(--muted)">© 2025 Brightly Inc. — Designed with care.</div>
+      <div style="display:flex;gap:12px">
+        <a href="#" style="text-decoration:none;color:var(--muted)">Terms</a>
+        <a href="#" style="text-decoration:none;color:var(--muted)">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small accessibility enhancement: announce CTA clicks
+    document.getElementById('buyNow').addEventListener('click', function(){
+      alert('Thanks! Redirecting to checkout (placeholder).');
+    });
+    document.getElementById('learnMore').addEventListener('click', function(){
+      location.hash = '#features';
+    });
+  </script>
+</body>
+</html>
